@@ -25,9 +25,9 @@ ERROR_TOPIC = f'{BASE_TOPIC}/error'
 CONFIG_TOPIC = f'{BASE_TOPIC}/config'
 STATE_TOPIC = f'{BASE_TOPIC}/status'
 
-heat_relay_pin = Pin(18, Pin.OUT, value=0)
-cool_relay_pin = Pin(19, Pin.OUT, value=0)
-temp_pin = Pin(21)
+heat_relay_pin = Pin(26, Pin.OUT, value=0)
+cool_relay_pin = Pin(18, Pin.OUT, value=0)
+temp_pin = Pin(19)
 
 # OneWire, DallasTemperature
 ds = ds18x20.DS18X20(onewire.OneWire(temp_pin))
